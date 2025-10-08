@@ -2,7 +2,7 @@
 
 ## ?? Mô t? Project
 
-GuardVN Face Recognition là m?t h? th?ng nh?n di?n khuôn m?t ???c phát tri?n b?ng WPF (.NET 8) v?i OpenCV, h? tr? camera webcam và RTSP streaming ?? giám sát an ninh thông minh.
+GuardVN Face Recognition là h? th?ng nh?n di?n khuôn m?t ???c phát tri?n b?ng WPF (.NET 8) v?i OpenCV, h? tr? camera webcam và RTSP streaming ?? giám sát an ninh thông minh.
 
 ## ? Tính n?ng chính
 
@@ -45,15 +45,15 @@ GuardVN Face Recognition là m?t h? th?ng nh?n di?n khuôn m?t ???c phát tri?n b?n
 <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
 ```
 
-## ?? Cài ??t và ch?y
+## ?? Installation & Setup
 
-### Yêu c?u h? th?ng
+### System Requirements
 - **OS**: Windows 10/11
 - **.NET**: .NET 8 Runtime
-- **Camera**: Webcam ho?c IP Camera h? tr? RTSP
-- **Visual Studio**: 2022 ho?c m?i h?n (?? development)
+- **Camera**: Webcam or RTSP-compatible IP Camera
+- **Visual Studio**: 2022 or newer (for development)
 
-### Cách ch?y
+### Getting Started
 1. Clone repository:
 ```bash
 git clone https://github.com/thangcntt0290/GuardVNFaceRecoginition.git
@@ -75,34 +75,34 @@ dotnet build
 dotnet run
 ```
 
-## ?? H??ng d?n s? d?ng
+## ?? User Guide
 
-### 1. Kh?i ??ng ?ng d?ng
-- ?ng d?ng s? t? ??ng detect webcam có s?n
-- Ch?n camera t? ComboBox ? góc trên
+### 1. Application Startup
+- Application automatically detects available webcams
+- Select camera from ComboBox in the header
 
 ### 2. Start Camera Streaming
-- Nh?n nút **"? Start"** ?? b?t ??u streaming
-- Video s? hi?n th? trong khung camera chính
-- Status bar s? hi?n th? thông tin streaming
+- Click **"? Start"** button to begin streaming
+- Video will display in the main camera area
+- Status bar shows streaming information
 
-### 3. Ch?p ?nh
-- Nh?n nút **"?? Capture"** khi camera ?ang ch?y
-- ?nh s? ???c l?u vào Desktop v?i format timestamp
+### 3. Capture Images
+- Click **"?? Capture"** button while camera is running
+- Images are saved to Desktop with timestamp format
 
-### 4. Thêm camera m?i
-- Nh?n **"? Add Camera"**
-- Nh?p tên camera và thông tin k?t n?i:
-  - **Webcam**: Nh?p ID (0, 1, 2...)
-  - **RTSP**: Nh?p URL (rtsp://...)
+### 4. Add New Camera
+- Click **"? Add Camera"**
+- Enter camera name and connection details:
+  - **Webcam**: Enter device ID (0, 1, 2...)
+  - **RTSP**: Enter RTSP URL (rtsp://...)
 
-### 5. Qu?n lý camera
-- **Edit**: Ch?nh s?a thông tin camera
-- **Remove**: Xóa camera kh?i danh sách
+### 5. Camera Management
+- **Edit**: Modify camera settings (coming soon)
+- **Remove**: Delete camera from list
 
-## ??? Ki?n trúc Project
+## ??? Project Architecture
 
-### ?? C?u trúc th? m?c
+### ?? Directory Structure
 ```
 GuardVNFaceRecoginition/
 ??? Commands/           # ICommand implementations
@@ -111,54 +111,54 @@ GuardVNFaceRecoginition/
 ??? Services/          # Business logic services
 ??? ViewModels/        # MVVM ViewModels
 ??? Views/             # XAML Views
-??? Resources/         # Assets và resources
+??? Resources/         # Assets and resources
 ```
 
-### ?? Components chính
+### ?? Key Components
 
 #### Services
-- **CameraService**: Qu?n lý camera streaming v?i OpenCV
+- **CameraService**: Manages camera streaming with OpenCV
 - **CameraDetector**: Auto-detect available cameras
-- **MessageService**: Hi?n th? dialogs và notifications
+- **MessageService**: Display dialogs and notifications
 
 #### ViewModels
-- **MainWindowViewModel**: ViewModel chính cho giao di?n
-- **AddCameraWindowViewModel**: ViewModel cho dialog thêm camera
+- **MainWindowViewModel**: Main UI ViewModel
+- **AddCameraWindowViewModel**: Add camera dialog ViewModel
 
 #### Models
-- **Camera**: Model cho camera configuration
-- **CameraStatus**: Status model v?i color coding
-- **NavigationPage**: Enum cho tab navigation
+- **Camera**: Camera configuration model
+- **CameraStatus**: Status model with color coding
+- **NavigationPage**: Navigation tab enumeration
 
-## ?? X? lý l?i ph? bi?n
+## ?? Troubleshooting
 
-### Camera không kh?i ??ng ???c
-- Ki?m tra camera có b? ?ng d?ng khác s? d?ng
-- Verify RTSP URL và network connection
-- Check Windows camera permissions
+### Camera Won't Start
+- Check if camera is being used by another application
+- Verify RTSP URL and network connection
+- Check Windows camera permissions in Settings
 
-### Performance issues
-- Gi?m resolution n?u máy y?u
-- ?óng các ?ng d?ng camera khác
-- Update driver camera
+### Performance Issues
+- Lower resolution if system is slow
+- Close other camera applications
+- Update camera drivers
 
-## ?? ?óng góp
+## ?? Contributing
 
-M?i ?óng góp ??u ???c hoan nghênh! Vui lòng:
+All contributions are welcome! Please:
 
-1. Fork project
-2. T?o feature branch: `git checkout -b feature/AmazingFeature`
+1. Fork the project
+2. Create feature branch: `git checkout -b feature/AmazingFeature`
 3. Commit changes: `git commit -m 'Add some AmazingFeature'`
 4. Push to branch: `git push origin feature/AmazingFeature`
-5. T?o Pull Request
+5. Create Pull Request
 
 ## ?? License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## ????? Tác gi?
+## ????? Author
 
-**Th?ng Cao** - [@thangcntt0290](https://github.com/thangcntt0290)
+**Thang Cao** - [@thangcntt0290](https://github.com/thangcntt0290)
 
 Project Link: [https://github.com/thangcntt0290/GuardVNFaceRecoginition](https://github.com/thangcntt0290/GuardVNFaceRecoginition)
 
@@ -170,4 +170,4 @@ Project Link: [https://github.com/thangcntt0290/GuardVNFaceRecoginition](https:/
 
 ---
 
-? **N?u project h?u ích, ??ng quên star repository!** ?
+? **If this project is helpful, please star the repository!** ?
