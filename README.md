@@ -1,39 +1,39 @@
-# GuardVN Face Recognition System
+﻿# GuardVN Face Recognition System
 
-## ?? M� t? Project
+## 📋 Mô tả Project
 
-GuardVN Face Recognition l� h? th?ng nh?n di?n khu�n m?t ???c ph�t tri?n b?ng WPF (.NET 8) v?i OpenCV, h? tr? camera webcam v� RTSP streaming ?? gi�m s�t an ninh th�ng minh.
+GuardVN Face Recognition là hệ thống nhận diện khuôn mặt được phát triển bằng WPF (.NET 8) với OpenCV, hỗ trợ camera webcam và RTSP streaming để giám sát an ninh thông minh.
 
-## ? T�nh n?ng ch�nh
+## ✨ Tính năng chính
 
-### ?? Camera Streaming
-- **Webcam Support**: H? tr? multiple webcam devices
-- **RTSP Streaming**: K?t n?i v?i IP camera qua RTSP protocol
-- **Maximum Resolution**: T? ??ng detect v� set ?? ph�n gi?i cao nh?t
-- **Real-time Display**: Hi?n th? video real-time v?i 30 FPS
+### 🎥 Camera Streaming
+- **Webcam Support**: Hỗ trợ multiple webcam devices
+- **RTSP Streaming**: Kết nối với IP camera qua RTSP protocol
+- **Maximum Resolution**: Tự động detect và set độ phân giải cao nhất
+- **Real-time Display**: Hiển thị video real-time với 30 FPS
 
-### ??? Giao di?n ng??i d�ng
-- **Modern UI**: Thi?t k? Material Design hi?n ??i
-- **MVVM Pattern**: Ki?n tr�c MVVM chu?n v?i WPF
-- **Responsive Layout**: Giao di?n responsive, h? tr? full-screen
-- **Multi-tab Navigation**: ?i?u h??ng gi?a c�c ch?c n?ng
+### 🖥️ Giao diện người dùng
+- **Modern UI**: Thiết kế Material Design hiện đại
+- **MVVM Pattern**: Kiến trúc MVVM chuẩn với WPF
+- **Responsive Layout**: Giao diện responsive, hỗ trợ full-screen
+- **Multi-tab Navigation**: Điều hướng giữa các chức năng
 
-### ?? Qu?n l� Camera
-- **Add/Remove Camera**: Th�m/x�a camera ??ng
-- **Auto Detection**: T? ??ng ph�t hi?n webcam c� s?n
-- **Camera Validation**: Ki?m tra t�nh kh? d?ng c?a camera
-- **Status Monitoring**: Theo d�i tr?ng th�i camera real-time
+### 📷 Quản lý Camera
+- **Add/Remove Camera**: Thêm/xóa camera động
+- **Auto Detection**: Tự động phát hiện webcam có sẵn
+- **Camera Validation**: Kiểm tra tính khả dụng của camera
+- **Status Monitoring**: Theo dõi trạng thái camera real-time
 
-### ?? T�nh n?ng n�ng cao
-- **Frame Capture**: Ch?p v� l?u ?nh ch?t l??ng cao
-- **Error Handling**: X? l� l?i th�ng minh v� recovery
-- **Threading**: Multi-threading an to�n cho UI
-- **Resource Management**: Qu?n l� t�i nguy�n t?i ?u
+### 🎯 Tính năng nâng cao
+- **Frame Capture**: Chụp và lưu ảnh chất lượng cao
+- **Error Handling**: Xử lý lỗi thông minh và recovery
+- **Threading**: Multi-threading an toàn cho UI
+- **Resource Management**: Quản lý tài nguyên tối ưu
 
-## ??? C�ng ngh? s? d?ng
+## 🛠️ Công nghệ sử dụng
 
 ### Framework & Libraries
-- **.NET 8**: Platform ch�nh
+- **.NET 8**: Platform chính
 - **WPF**: Windows Presentation Foundation
 - **OpenCV 4.11**: Computer Vision library
 - **MVVM Pattern**: Model-View-ViewModel architecture
@@ -45,7 +45,7 @@ GuardVN Face Recognition l� h? th?ng nh?n di?n khu�n m?t ???c ph�t tri?n b?ng WP
 <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
 ```
 
-## ?? Installation & Setup
+## 🚀 Installation & Setup
 
 ### System Requirements
 - **OS**: Windows 10/11
@@ -75,23 +75,23 @@ dotnet build
 dotnet run
 ```
 
-## ?? User Guide
+## 📖 User Guide
 
 ### 1. Application Startup
 - Application automatically detects available webcams
 - Select camera from ComboBox in the header
 
 ### 2. Start Camera Streaming
-- Click **"? Start"** button to begin streaming
+- Click **"▶ Start"** button to begin streaming
 - Video will display in the main camera area
 - Status bar shows streaming information
 
 ### 3. Capture Images
-- Click **"?? Capture"** button while camera is running
+- Click **"📷 Capture"** button while camera is running
 - Images are saved to Desktop with timestamp format
 
 ### 4. Add New Camera
-- Click **"? Add Camera"**
+- Click **"➕ Add Camera"**
 - Enter camera name and connection details:
   - **Webcam**: Enter device ID (0, 1, 2...)
   - **RTSP**: Enter RTSP URL (rtsp://...)
@@ -100,21 +100,21 @@ dotnet run
 - **Edit**: Modify camera settings (coming soon)
 - **Remove**: Delete camera from list
 
-## ??? Project Architecture
+## 🏗️ Project Architecture
 
-### ?? Directory Structure
+### 📁 Directory Structure
 ```
 GuardVNFaceRecoginition/
-??? Commands/           # ICommand implementations
-??? Converters/         # Value converters for XAML
-??? Models/            # Data models
-??? Services/          # Business logic services
-??? ViewModels/        # MVVM ViewModels
-??? Views/             # XAML Views
-??? Resources/         # Assets and resources
+├── Commands/           # ICommand implementations
+├── Converters/         # Value converters for XAML
+├── Models/            # Data models
+├── Services/          # Business logic services
+├── ViewModels/        # MVVM ViewModels
+├── Views/             # XAML Views
+└── Resources/         # Assets and resources
 ```
 
-### ?? Key Components
+### 🔧 Key Components
 
 #### Services
 - **CameraService**: Manages camera streaming with OpenCV
@@ -130,7 +130,7 @@ GuardVNFaceRecoginition/
 - **CameraStatus**: Status model with color coding
 - **NavigationPage**: Navigation tab enumeration
 
-## ?? Troubleshooting
+## 🐛 Troubleshooting
 
 ### Camera Won't Start
 - Check if camera is being used by another application
@@ -142,7 +142,7 @@ GuardVNFaceRecoginition/
 - Close other camera applications
 - Update camera drivers
 
-## ?? Contributing
+## 🤝 Contributing
 
 All contributions are welcome! Please:
 
@@ -152,22 +152,20 @@ All contributions are welcome! Please:
 4. Push to branch: `git push origin feature/AmazingFeature`
 5. Create Pull Request
 
-## ?? License
+## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## ????? Author
+## 👨‍💻 Author
 
 **Thang Cao** - [@thangcntt0290](https://github.com/thangcntt0290)
 
 Project Link: [https://github.com/thangcntt0290/GuardVNFaceRecoginition](https://github.com/thangcntt0290/GuardVNFaceRecoginition)
 
-## ?? Acknowledgments
+## 🙏 Acknowledgments
 
 - [OpenCV](https://opencv.org/) - Computer Vision library
 - [Microsoft WPF](https://github.com/dotnet/wpf) - UI Framework
 - [Material Design](https://material.io/design) - Design principles
 
 ---
-
-? **If this project is helpful, please star the repository!** ?
