@@ -99,7 +99,7 @@ namespace GuardVNFaceRecoginition.Services
             { 
                 Name = "RTSP Camera", 
                 SourceType = "RTSP", 
-                Source = "rtsp://admin:Admin123!@10.235.3.229:554/stream1" 
+                Source = "rtsp://Admin:Admin123!@10.81.70.103:554/stream1"
             });
             
             return cameras;
