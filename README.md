@@ -158,7 +158,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 👨‍💻 Author
 
-**Thang Cao** - [@thangcntt0290](https://github.com/thangcntt0290)
+**Thang Nguyen** - [@thangcntt0290](https://github.com/thangcntt0290)
 
 Project Link: [https://github.com/thangcntt0290/GuardVNFaceRecoginition](https://github.com/thangcntt0290/GuardVNFaceRecoginition)
 
